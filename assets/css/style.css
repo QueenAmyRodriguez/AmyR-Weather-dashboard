@@ -90,19 +90,6 @@ p {
   list-style: none;
 }
 
-.list-item {
-  margin-bottom: 10px;
-  padding: 1.5%;
-  border-radius: var(--border-radius);
-  background-color: var(--light-dark);
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.list-item:hover {
-  background-color: var(--dark);
-}
-
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
@@ -118,6 +105,8 @@ p {
 }
 
 .card-body {
+  background-color: var(--primary);
+  color: var(--tertiary);
   padding: 2.5%;
 }
 
