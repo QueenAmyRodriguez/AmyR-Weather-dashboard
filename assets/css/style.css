@@ -110,6 +110,12 @@ p {
   padding: 2.5%;
 }
 
+.day {
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px;
+}
+
 /* FORM */
 .form-label,
 .form-input,

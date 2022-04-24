@@ -17,6 +17,7 @@ var formSubmitHandler = function (event) {
     // clear old content
     cityInputEl.value = "";
     weatherContainerEl.textContent = "";
+    fiveDayContainerEL.textContent = "";
 };
 
 var getWeatherData = function (city) {
@@ -94,7 +95,7 @@ var getForecastData = function (data) {
     for (var i = 0; i < 5; i++) {
         
         var divContainer = document.createElement('div');
-        divContainer.className = "card";
+        divContainer.className = "card day";
 
         var icon = "http://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png";
         var iconImg = document.createElement("img");
@@ -122,6 +123,7 @@ var getForecastData = function (data) {
     }
 
     fiveDayContainerEL.appendChild(dailyContainerEl);
+
 }
 
 
